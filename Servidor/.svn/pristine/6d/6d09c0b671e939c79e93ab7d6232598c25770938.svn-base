@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>TanSocial Server</title>
+</head>
+<link rel="shortcut icon" href="./image/favicon.ico">
+<style>
+</style>
+<body>
+<H1>
+	<img alt="Inicio TanSocial" src="./image/Logo.png" width="40" height="35"/> TanSocial
+</H1>
+<div id="Menu">
+</div>
+	<h3>Log de Servidor:</h3>
+<div>
+<textarea rows="20" cols="150">
+</textarea>
+</div>
+</body>
+</html>
