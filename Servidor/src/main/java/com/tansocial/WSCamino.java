@@ -34,7 +34,7 @@ import com.tansocial.utils.HibernateUtil;
 @Path("/camino")
 @Stateless
 public class WSCamino {
-    private ArrayList<String> log = new ArrayList<String>();
+    private static ArrayList<String> log = new ArrayList<String>();
 	private Logger logger = Logger.getLogger("myLogger");
 	
     /** Method processing HTTP GET requests, producing "text/plain" MIME media
@@ -46,11 +46,6 @@ public class WSCamino {
     @Produces(MediaType.APPLICATION_JSON)
     public Map getCamino() {
     	Map<String, Object> map = new HashMap<String, Object>();
-		map.put("user", "usul");
-		log.add("camino 1");
-		log.add("camino 2");
-		log.add("camino 3");
-		log.add("camino 4");
 		map.put("items", log);
 		return map;
 	}
@@ -68,6 +63,7 @@ public class WSCamino {
     	else
     		result = "false" ;
 		logger.info("ID: "+id+ " Usuario: "+ firstName+" Camino: "+camino);		
+
 		try{
 		
 		Session session = HibernateUtil.getSessionFactory().openSession();
@@ -107,8 +103,8 @@ public class WSCamino {
 			result = "El camino con id "+idCamino+" se agrego con exito" ;
     	else
     		result = "Ocurrio algun problema man" ;
-		logger.info("ID: "+idCamino+ " Hora de Inicio: "+ horaInicio+" Nombre: "+nombre);
-		
+		logger.info("ID: "+idCamino+ " Hora de Inicio: "+ horaInicio+" Nombre: "+nombre+"\n");
+		log.add(puntos);
 		//TODO: Agregar sentencias para insertar un camino en la BD
 		return Response.status(201).entity(result).build();
 	}
