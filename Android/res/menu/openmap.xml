@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/wikipedia"
+        android:title="@string/Wikipedia"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item android:id="@+id/Configuracion"
+        android:title="@string/Configuracion"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item android:id="@+id/Guardar"
+        android:title="@string/Guardar"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item android:id="@+id/Enviar"
+        android:title="@string/Enviar"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item android:id="@+id/EnviarLugar" 
+        android:title="@string/enviarLugarMenu"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+</menu>

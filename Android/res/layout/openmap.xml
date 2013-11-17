@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/openmapview"
+        android:layout_width="fill_parent"
+        android:layout_height="398dp" />
+
+
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/posicion"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/Posicion" 
+         
+        />
+
+
+    <Button
+        android:id="@+id/Detener"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:enabled="false"
+        android:text="@string/detener" 
+        />
+
+
+    <Button
+        android:id="@+id/monitorear"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="@string/Monitorear" 
+        />
+    
+    </LinearLayout>
+ 
+</LinearLayout>
